@@ -1,0 +1,56 @@
+{
+  "name": "@devstephenke-sys/npm-mcp",
+  "version": "1.0.0",
+  "description": "MCP server for npm registry — search, view, publish, version management, tokens, orgs, and access control",
+  "type": "module",
+  "main": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "files": [
+    "dist",
+    "README.md",
+    "LICENSE",
+    "CHANGELOG.md"
+  ],
+  "bin": {
+    "npm-registry-mcp": "./dist/index.js"
+  },
+  "scripts": {
+    "build": "tsc",
+    "start": "node dist/index.js",
+    "dev": "tsx src/index.ts",
+    "prepublishOnly": "npm run build",
+    "verify": "npm run build"
+  },
+  "engines": {
+    "node": ">=18"
+  },
+  "keywords": [
+    "mcp",
+    "model-context-protocol",
+    "npm",
+    "registry",
+    "package-management"
+  ],
+  "author": "",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/devstephenke-sys/npm-mcp-server.git"
+  },
+  "bugs": {
+    "url": "https://github.com/devstephenke-sys/npm-mcp-server/issues"
+  },
+  "homepage": "https://github.com/devstephenke-sys/npm-mcp-server#readme",
+  "publishConfig": {
+    "access": "public"
+  },
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "^1.32.1",
+    "zod": "^3.24.0"
+  },
+  "devDependencies": {
+    "@types/node": "^22.10.0",
+    "tsx": "^4.19.0",
+    "typescript": "^5.7.0"
+  }
+}
