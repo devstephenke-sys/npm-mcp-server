@@ -38,7 +38,7 @@ git push -u origin main
 
 1. Create an [npm account](https://www.npmjs.com/signup).
 2. Log in locally: `npm login`
-3. The package name is already scoped: `@devstephenke-sys/npm-mcp` (replace with your npm username)
+3. The package name is already scoped: `@kinus/npm-mcp` (replace with your npm username)
 4. `publishConfig` with `"access": "public"` is already set in package.json
 
 ### Publish
@@ -69,7 +69,7 @@ git push && git push --tags
   "mcpServers": {
     "npm-registry": {
       "command": "npx",
-      "args": ["-y", "@devstephenke-sys/npm-mcp"],
+      "args": ["-y", "@kinus/npm-mcp"],
       "env": {
         "NPM_TOKEN": "${env:NPM_TOKEN}"
       }

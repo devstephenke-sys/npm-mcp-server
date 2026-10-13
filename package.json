@@ -1,5 +1,5 @@
 {
-  "name": "@devstephenke-sys/npm-mcp",
+  "name": "@kinus/npm-mcp",
   "version": "1.0.0",
   "description": "MCP server for npm registry — search, view, publish, version management, tokens, orgs, and access control",
   "type": "module",

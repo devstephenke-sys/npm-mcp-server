@@ -3,7 +3,7 @@
 npm Registry MCP server for Model Context Protocol.
 
 [![CI](https://github.com/devstephenke-sys/npm-mcp-server/actions/workflows/ci.yml/badge.svg)](https://github.com/devstephenke-sys/npm-mcp-server/actions/workflows/ci.yml)
-[![npm version](https://img.shields.io/npm/v/@devstephenke-sys/npm-mcp.svg)](https://www.npmjs.com/package/@devstephenke-sys/npm-mcp)
+[![npm version](https://img.shields.io/npm/v/@kinus/npm-mcp.svg)](https://www.npmjs.com/package/@kinus/npm-mcp)
 [![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](LICENSE)
 
 **Model Context Protocol (MCP) server** for the [npm registry](https://www.npmjs.com/) — built for **package management and automation** workflows in Cursor, Claude Desktop, and other MCP clients.
@@ -21,7 +21,7 @@ Give your AI agent tools to search packages, view metadata, publish packages, ma
   "mcpServers": {
     "npm-registry": {
       "command": "npx",
-      "args": ["-y", "@devstephenke-sys/npm-mcp"],
+      "args": ["-y", "@kinus/npm-mcp"],
       "env": {
         "NPM_TOKEN": "${env:NPM_TOKEN}"
       }
@@ -125,7 +125,7 @@ To use a custom npm registry, set the `NPM_REGISTRY_URL` environment variable:
   "mcpServers": {
     "npm-registry": {
       "command": "npx",
-      "args": ["-y", "@devstephenke-sys/npm-mcp"],
+      "args": ["-y", "@kinus/npm-mcp"],
       "env": {
         "NPM_TOKEN": "${env:NPM_TOKEN}",
         "NPM_REGISTRY_URL": "https://your-registry.example.com"
